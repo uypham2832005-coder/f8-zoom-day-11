@@ -1,0 +1,62 @@
+:root {
+    --x-gutter-width: 3rem;
+
+    --real-col-width: calc((100% - (11 * var(--x-gutter-width))) / 12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.bs-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    --c-scale: 100%;
+    width: var(--c-scale);
+
+    --c-row-gap: 2rem;
+    gap: var(--c-row-gap);
+
+    --c-pt: 0rem;
+    padding-top: var(--c-pt);
+
+    --c-pb: 0rem;
+    padding-bottom: var(--c-pb);
+}
+
+.bs-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    --r-width: 120rem;
+    width: var(--r-width);
+    max-width: 100%;
+
+    --r-row-gap: 0;
+    row-gap: var(--r-row-gap);
+
+    column-gap: var(--x-gutter-width);
+}
+
+.bs-row-item {
+    --i-span: 1;
+    --i-offset: 0;
+    --i-order: 0;
+
+    width: calc(
+        var(--i-span) * var(--real-col-width) + (var(--i-span) - 1) *
+            var(--x-gutter-width)
+    );
+    margin-left: calc(
+        var(--i-offset) * (var(--real-col-width) + var(--x-gutter-width))
+    );
+    order: var(--i-order);
+}

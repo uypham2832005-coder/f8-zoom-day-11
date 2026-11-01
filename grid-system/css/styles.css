@@ -1,0 +1,55 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.bs-container {
+    --x-gutter-width: 0.9rem;
+    --c-row-gap: 0.9rem;
+
+    padding: 0.3rem;
+}
+
+.bs-row {
+    --r-width: 120rem;
+    --r-row-gap: 0;
+}
+
+.bs-col-12 {
+    --i-span: 12;
+}
+.bs-col-6 {
+    --i-span: 6;
+}
+.bs-col-4 {
+    --i-span: 4;
+}
+.bs-col-3 {
+    --i-span: 3;
+}
+.bs-col-2 {
+    --i-span: 2;
+}
+.bs-col-1 {
+    --i-span: 1;
+}
+
+.bs-row-item {
+    min-width: 0;
+    height: 4.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #9bce0b;
+    color: #ffffff;
+
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+}

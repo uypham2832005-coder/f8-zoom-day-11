@@ -1,0 +1,472 @@
+/* E:\Hè năm 3\F8\11\shop\shop.html */
+:root {
+    /* 5. Misc & Animation */
+    --ff-roboto-slab: "Roboto Slab", serif;
+    --ff-manrope: "Manrope", sans-serif;
+    --font-body: var(--ff-manrope);
+    --font-heading: var(--ff-roboto-slab);
+    --color-cream-light: #f8ebc9;
+    --color-slate-gray: #586863;
+    --color-dark-slate: #0e1412;
+    --color-forest-green: #017848;
+    --color-warm-yellow: #fed464;
+    --color-coral-orange: #fd6038;
+    --color-pure-white: #ffffff;
+    --highlight-color: #2afb01;
+}
+
+@media (max-width: 1399.98px) {
+    /* {mức 2} */
+    /* HERO-SECTION HERO-SECTION HERO-SECTION HERO-SECTION HERO-SECTION HERO-SECTION HERO-SECTION  */
+    /* HERO-SECTION HERO-SECTION HERO-SECTION HERO-SECTION HERO-SECTION HERO-SECTION HERO-SECTION  */
+    /* HERO-SECTION HERO-SECTION HERO-SECTION HERO-SECTION HERO-SECTION HERO-SECTION HERO-SECTION  */
+    html {
+        font-size: 50%;
+    }
+
+    .rotating-text text {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    /* {mức 3} */
+    html {
+        font-size: 43.05%;
+    }
+
+    .rotating-text text {
+        font-size: 2rem;
+        letter-spacing: 0.8rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    /* {mức 4} */
+    html {
+        font-size: 33.3%;
+    }
+    .rotating-text text {
+        font-size: 2.5rem;
+        letter-spacing: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    /* {mức 5} */
+
+    html {
+        font-size: 25%;
+    }
+    .rotating-text text {
+        font-size: 3.5rem;
+        letter-spacing: 1.4rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    /* 0. Ẩn toàn bộ các section con khác ngoại trừ section đầu tiên (.hero-section) */
+    .page-wrapper
+        > *:not(
+            :first-child,
+            :nth-child(2),
+            :nth-child(3),
+            :nth-child(4),
+            :nth-child(5),
+            :nth-child(6),
+            :nth-child(7),
+            :nth-child(8),
+            :nth-child(9),
+            :nth-child(10),
+            :nth-child(11)
+        ) {
+        display: none !important;
+    }
+    html {
+        font-size: 36.5%;
+    }
+    [class*="__container-C"] {
+        --c-scale: 100%;
+        --c-row-gap: 6rem;
+        --c-pt: 3rem;
+        --c-pb: 4rem;
+        width: 100%;
+    }
+    [class*="-section"] {
+        width: 63.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 3rem;
+    }
+
+    .page-wrapper > .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section > .hero-section__container-C {
+        --c-scale: 100%;
+        --c-row-gap: 6rem;
+        --c-pt: 3rem;
+        --c-pb: 4rem;
+        width: 100%;
+    }
+
+    .hero-section__container-C .bs-row {
+        --r-width: 100%;
+        width: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .hero-header-R > .hero-header-wrapper-RI {
+        --i-span: 12;
+        --i-offset: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero-header-wrapper-RI > .hero-logo,
+    .hero-header-wrapper-RI > .hero-nav {
+        display: none;
+    }
+
+    .header-hamburger {
+        display: block;
+        order: 1;
+    }
+
+    .hero-header-wrapper-RI > .hero-contact-info {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        order: 2;
+    }
+
+    .hero-banner-R > .hero-content-RI {
+        --i-span: 12;
+        --i-offset: 0;
+        width: 100%;
+        display: flex;
+    }
+    .hero-content-RI > .hero-content__title {
+        width: 56.3rem;
+    }
+    .hero-content-RI > .hero-content__description {
+        width: 53rem;
+    }
+    .hero-banner-R {
+        --r-row-gap: 10rem;
+    }
+    /* 1. Căn giữa cột chứa Media */
+    .hero-banner-R > .hero-media-RI {
+        --i-span: 12;
+        --i-offset: 0;
+        width: 40rem;
+        margin: 3rem auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-banner-R > .hero-media-RI::before {
+        width: 30rem; /* Độ rộng dải màu vàng */
+        height: 87.5%;
+        left: 0; /* Ôm sát mép trái nền xanh */
+        bottom: 0;
+        transform: none; /* Bỏ transform căn giữa cũ */
+    }
+
+    .hero-media-RI > .hero-media__frame {
+        width: auto;
+        max-width: 29rem; /* Tùy chỉnh kích thước ảnh mobile tại đây */
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .hero-media__frame > .hero-media__img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .hero-media__frame > .black-circle {
+        width: 10rem;
+        height: 10rem;
+        top: -5rem;
+        left: -11rem;
+    }
+
+    .black-circle > .white-triangle {
+        border-top: 1.2rem solid transparent;
+        border-bottom: 1.2rem solid transparent;
+        border-left: 2rem solid white;
+    }
+
+    .hero-media__frame > .hero-decoration {
+        width: 15rem;
+        top: 8rem;
+        right: -15rem;
+        left: auto;
+    }
+    /* about              --------------------------------------------------------------------------- */
+    .about-wrapper-R > .about-media-RI {
+        display: none;
+    }
+    .about-wrapper-R > .about-content-RI {
+        --i-span: 12;
+    }
+    .about-content-RI > .about-content__desc {
+        width: 91%;
+    }
+    /* service ------------------------------------------------------------------------------ */
+    .services-grid-R > .services-card-RI {
+        --i-span: 12;
+    }
+    .services-section__container-C > .services-grid-R {
+        --r-row-gap: 10rem;
+    }
+    .services-card-RI > .services-card__title {
+        top: 89%;
+    }
+    /* ----------------------------------- */
+    .features-wrapper-R > .features-media-RI {
+        --i-span: 12;
+        --i-offset: 0;
+        --i-order: 2; /* Đặt order cao hơn content (content mặc định --i-order: 0 hoặc 1) */
+    }
+
+    .features-wrapper-R > .features-content-RI {
+        --i-span: 12;
+        --i-offset: 0;
+        --i-order: 1; /* Đưa content lên trước */
+    }
+
+    /* Xóa hoặc sửa thuộc tính cũ của --reverse để tránh bị đè */
+    .features-wrapper-R--reverse > .features-media-RI {
+        --i-order: 2;
+    }
+
+    .features-media__frame > .features-media__img {
+        width: 85%;
+        object-fit: contain;
+        translate: 8.7rem 0;
+    }
+    .features-media__frame > .feature-decoration-1 {
+        left: 0.2rem;
+        width: 11.7rem;
+    }
+    .features-media__frame > .feature-decoration-2 {
+        left: 0.5rem;
+    }
+    .features-section__container-C > .features-wrapper-R {
+        --r-row-gap: 6rem;
+    }
+    /* =---------------------------------------------------------------------------- */
+    .team-grid-R > .team-card-RI {
+        --i-span: 12;
+    }
+    .team-card-RI > .view-profile {
+        top: 80%;
+    }
+    /* ----------------------------------------------- */
+    .awards-grid-R > .awards-logo-RI {
+        --i-span: 8;
+        --i-offset: 2;
+    }
+    .awards-section__container-C > .awards-grid-R {
+        --r-row-gap: 5rem;
+    }
+    /* --------------------------------------------------------- */
+    .testimonial-slider-R > .testimonial-card-RI {
+        --i-span: 12;
+    }
+
+    .testimonial-card-RI > .testimonial-card__quote {
+        font-size: 2.9rem;
+        line-height: 4.5rem;
+    }
+    .testimonial-card-RI > .testimonial-card__author {
+        height: auto; /* Bỏ chiều cao cứng 12rem */
+        display: flex;
+        flex-direction: column; /* Sắp xếp các phần tử con theo chiều dọc */
+        gap: 1.5rem;
+    }
+
+    .testimonial-card__author > .testimonial-card__name {
+        font-size: 2.9rem;
+    }
+
+    .testimonial-card__author > .testimonial-card__role {
+        font-size: 2.9rem;
+    }
+    /* ---------------------- */
+    .faq-item-R > .faq-item__question-RI {
+        --i-span: 12;
+        --i-offset: 0;
+    }
+    .faq-item-R > .faq-item-RI {
+        --i-span: 12;
+        --i-offset: 0;
+    }
+    .faq-item__question-RI > .faq-item__answer {
+        width: 100%;
+    }
+    .faq-item__question-bar > .faq-item__question {
+    }
+    .faq-item__question-bar > .button {
+    }
+    .faq-item__question-RI > .faq-item__question-bar {
+        width: 100%;
+    }
+    .faq-item-R > .faq-item__question-RI {
+        padding: 3rem 3rem;
+    }
+
+    /* --------------------------------------- */
+    .blog-action-RI > .blog-action__btn {
+        display: none;
+    }
+    .blog-header-RI > .blog-header__title {
+        width: 50rem;
+    }
+    .blog-header-RI > .blog-header__desc {
+        width: 50rem;
+    }
+    .blog-grid-R > .blog-card-RI {
+        --i-span: 12;
+    }
+    .blog-card-RI > .blog-card__title {
+        font-size: 3.2rem;
+    }
+    .blog-card-RI > .blog-card__link {
+        font-size: 2.8rem;
+    }
+    .name-n-role > .blog-card__name {
+        font-size: 2.8rem;
+    }
+    .name-n-role > .blog-card__role {
+        font-size: 2.6rem;
+    }
+    .blog-mobile-button-R .blog-action__btn {
+        width: 15.8rem;
+        height: 6rem;
+        background-color: var(--color-coral-orange);
+        color: var(--color-pure-white);
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        letter-spacing: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog-mobile-button-R > .bs-row-item {
+        width: 100%;
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .blog-card__author > .name-n-role {
+        margin-left: 3rem;
+    }
+    .blog-grid-R > .blog-card-RI {
+        gap: 2rem;
+    }
+    .blog-section__container-C > .blog-grid-R {
+        --r-row-gap: 5rem;
+    }
+    .blog-card-RI > .blog-card__title {
+        line-height: 4.2rem;
+    }
+
+    /* ********************************* */
+    .footer-grid-RI > .footer-grid-inner-wrapper {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    .footer-grid-inner-wrapper .footer__title {
+        font-size: 3rem;
+    }
+    .footer-grid-inner-wrapper a {
+        font-size: 2.6rem;
+    }
+    .footer-contact > .footer-contact__item {
+        font-size: 2.6rem;
+        width: 39rem;
+    }
+    .footer-grid-inner-wrapper > .footer-contact {
+        gap: 1.8rem;
+    }
+    .footer-grid-R > .footer-map-RI {
+        --i-span: 12;
+        width: 100%;
+        max-width: 100%;
+        height: 30rem;
+        margin: 3rem auto 0;
+
+        /* Thêm 3 dòng này để căn giữa thẻ iframe con */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-map-RI > iframe {
+        width: 90%;
+        height: 100%;
+    }
+    .footer-bottom-R .footer-social-RI {
+        --i-span: 12;
+        --i-offset: 0;
+        justify-content: start;
+    }
+    .footer-copyright-RI > .footer-copyright__text {
+        width: 30rem;
+    }
+
+    .faq-section > .faq-content-container-C:nth-of-type(2) {
+        margin-top: -2rem;
+    }
+    .testimonial-section__container-C > .testimonial-slider-R {
+        --r-row-gap: 3rem;
+    }
+    .team-card__content > .team-card__role {
+        font-size: 2.6rem;
+    }
+    .team-card__content > .team-card__name {
+        font-size: 3.2rem;
+    }
+    .team-card__content {
+        gap: 1rem;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+    .team-card-RI > .view-profile {
+        translate: -50% -146%;
+        width: 23.1rem;
+        height: 8rem;
+    }
+    .hero-section,
+    .hero-section__container-C {
+        padding: 5rem 1rem !important;
+    }
+
+    /* ------------------------------- */
+    .rotating-text text {
+        font-size: 2rem;
+        letter-spacing: 1.1rem;
+    }
+}
